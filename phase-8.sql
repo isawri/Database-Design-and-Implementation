@@ -1,0 +1,2 @@
+CREATE ASSERTION  a1 CHECK(NOT EXISTS(SELECT COUNT(*) AS `count` FROM product GROUP BY `code`,`brand_id` HAVING COUNT(*)>1));
+CREATE ASSERTION  a2 CHECK(NOT EXISTS(SELECT COUNT(*) AS `count` FROM order_meta GROUP BY `product_id`,`order_id` HAVING COUNT(*)>1));

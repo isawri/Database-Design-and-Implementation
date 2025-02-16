@@ -1,0 +1,1 @@
+CREATE USER 'john_stones'@'%' IDENTIFIED WITH caching_sha2_password BY 'johnstones2000john';GRANT SELECT ON dbms.* TO 'john_stones'@'%';ALTER USER 'john_stones'@'%' REQUIRE;
